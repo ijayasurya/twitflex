@@ -1,33 +1,25 @@
-
+/*JS isn't my expertise ðŸ˜‰.
+  This is only to demonstrate how will look the profile page*/
 $(document).ready(function() {
-  $(&quot;.js-profile&quot;).on(&quot;click&quot;, function(){
-    $(&quot;.menu-item&quot;).removeClass(&quot;is-selected&quot;);
-    $(this).addClass(&quot;is-selected&quot;);
-    $(&quot;.icon-back, .profile-box&quot;).removeClass(&quot;u-hide&quot;);
-    $(&quot;.message-box&quot;).addClass(&quot;u-hide&quot;);
-    $(&quot;.js-title&quot;).text(&quot;Profile&quot;);
-  });
-
-
-  $(&quot;.js-search&quot;).on(&quot;click&quot;, function(){
-    $(&quot;.menu-item&quot;).removeClass(&quot;is-selected&quot;);
-    $(this).addClass(&quot;is-selected&quot;);
-    $(&quot;.icon-back, .search-box&quot;).removeClass(&quot;u-hide&quot;);
-    $(&quot;.message-box&quot;).addClass(&quot;u-hide&quot;);
-    $(&quot;.js-title&quot;).text(&quot;Search&quot;);
+  $(".js-profile").on("click", function(){
+    $(".menu-item").removeClass("is-selected");
+    $(this).addClass("is-selected");
+    $(".icon-back, .profile-box").removeClass("u-hide");
+    $(".message-box").addClass("u-hide");
+    $(".js-title").text("Elad Shechter");
   });
   
-  $(&quot;.js-home&quot;).on(&quot;click&quot;, function(){
-      $(&quot;.menu-item&quot;).removeClass(&quot;is-selected&quot;);
-      $(&quot;.menu-item.js-home&quot;).addClass(&quot;is-selected&quot;);
-      $(&quot;.icon-back, .profile-box,.search-box&quot;).addClass(&quot;u-hide&quot;);
-      $(&quot;.message-box&quot;).removeClass(&quot;u-hide&quot;);
-    $(&quot;.js-title&quot;).text(&quot;Home&quot;);
+  $(".js-home").on("click", function(){
+      $(".menu-item").removeClass("is-selected");
+      $(".menu-item.js-home").addClass("is-selected");
+      $(".icon-back, .profile-box").addClass("u-hide");
+      $(".message-box").removeClass("u-hide");
+      $(".js-title").text("Home");
   });
   
-  $(&quot;.js-tweet&quot;).on(&quot;click&quot;, function(){
-      $(&quot;.message-box&quot;).removeClass(&quot;u-hide&quot;);
-      $(&quot;.message-box-content&quot;).focus();
+  $(".js-tweet").on("click", function(){
+      $(".message-box").removeClass("u-hide");
+      $(".message-box-content").focus();
   });
  
 });
