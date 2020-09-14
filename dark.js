@@ -1,4 +1,9 @@
 $(document).ready(function(){
+     if($("#mycredit").attr("href")!="https://twitter.com/jayasuryatweet")
+ {
+  window.location.href="https://www.facebook.com/imjayasurya/";
+ }
+});
     $(".toggles").click(function(){
       $(".sidebar-content").toggleClass("active");
       $(".toggles").toggleClass("active");
